@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Photo Essay</title>
-  </head>
-  <body>
-    <h1>Photo Essay</h1>
-    <img src="img.lois.01.jpg" width="400" alt="Photo from essay">
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Essays</title>
+  <style>
+    .essay-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .essay {
+      width: 300px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .essay img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .essay img:hover {
+      transform: scale(1.05);
+    }
+
+    .essay-title {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+      display: block;
+    }
+
+    .essay-title:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Photo Essays</h1>
+  <div class="essay-container">
+
+    <!-- PHOTO ESSAY 1 — clickable link -->
+    <div class="essay">
+      <a href="https://github.com/yourusername/your-repo-1" target="_blank">
+        <img src="images/essay1.jpg" alt="Photo Essay 1">
+        <span class="essay-title">Photo Essay One</span>
+      </a>
+    </div>
+
+    <!-- PHOTO ESSAY 2 — just text, no link -->
+    <div class="essay">
+      <img src="images/essay2.jpg" alt="Photo Essay 2">
+      <span class="essay-title">Photo Essay Two</span>
+    </div>
+
+    <!-- PHOTO ESSAY 3 — clickable link -->
+    <div class="essay">
+      <a href="https://github.com/yourusername/your-repo-2" target="_blank">
+        <img src="images/essay3.jpg" alt="Photo Essay 3">
+        <span class="essay-title">Photo Essay Three</span>
+      </a>
+    </div>
+
+  </div>
+
+</body>
 </html>
+
