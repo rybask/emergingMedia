@@ -12,23 +12,102 @@
     .gallery img {
       width: 400px;
       height: auto;
+      cursor: pointer; /* shows that image is clickable */
+      transition: transform 0.2s;
+      border-radius: 5px;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 5px;
+      box-shadow: 0 0 15px #000;
+    }
+    .lightbox:target {
+      display: flex;
+    }
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <div class="gallery">
-    <img src="LOIS-01.jpg" alt="Stare">
-    <img src="LOIS-06.jpg" alt="Head Full of Hair">
-    <img src="LOIS-08.jpg" alt="Miss. Lois">
-    <img src="LOIS-09.jpg" alt="Her Husband">
-    <img src="LOIS-11.jpg" alt="Blue Rings">
-    <img src="Letter to Aunt Mary pg1.jpg" alt="Letter to Aunt Mary from Nana">
-    <img src="Letter to Aunt Mart pg2.jpg" alt="Letter to Aunt Mary from Napa pg2">
-    <img src="Map of Land .jpg" alt="Welcome to Southern Pines, NC">
-    <img src="Waranty Deed- Cover.jpg" alt="Hello, You've Got Land">
-    <img src="1961 TAX RECEIPT.jpg" alt="Taxes Paid"
-  </div>
+<div class="gallery">
+  <a href="#img1"><img src="LOIS-01.jpg" alt="Stare"></a>
+  <a href="#img2"><img src="LOIS-06.jpg" alt="Head Full of Hair"></a>
+  <a href="#img3"><img src="LOIS-08.jpg" alt="Miss. Lois"></a>
+  <a href="#img4"><img src="LOIS-09.jpg" alt="Her Husband"></a>
+  <a href="#img5"><img src="LOIS-11.jpg" alt="Blue Rings"></a>
+  <a href="#img6"><img src="Letter to Aunt Mary pg1.jpg" alt="Letter to Aunt Mary from Nana"></a>
+  <a href="#img7"><img src="Letter to Aunt Mart pg2.jpg" alt="Letter to Aunt Mary from Napa pg2"></a>
+  <a href="#img8"><img src="Map of Land .jpg" alt="Welcome to Southern Pines, NC"></a>
+  <a href="#img9"><img src="Waranty Deed- Cover.jpg" alt="Hello, You've Got Land"></a>
+  <a href="#img10"><img src="1961 TAX RECEIPT.jpg" alt="Taxes Paid"></a>
+</div>
+
+<!-- Lightbox sections -->
+<div id="img1" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="LOIS-01.jpg" alt="Stare">
+</div>
+<div id="img2" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="LOIS-06.jpg" alt="Head Full of Hair">
+</div>
+<div id="img3" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="LOIS-08.jpg" alt="Miss. Lois">
+</div>
+<div id="img4" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="LOIS-09.jpg" alt="Her Husband">
+</div>
+<div id="img5" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="LOIS-11.jpg" alt="Blue Rings">
+</div>
+<div id="img6" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="Letter to Aunt Mary pg1.jpg" alt="Letter to Aunt Mary from Nana">
+</div>
+<div id="img7" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="Letter to Aunt Mart pg2.jpg" alt="Letter to Aunt Mary from Napa pg2">
+</div>
+<div id="img8" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="Map of Land .jpg" alt="Welcome to Southern Pines, NC">
+</div>
+<div id="img9" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="Waranty Deed- Cover.jpg" alt="Hello, You've Got Land">
+</div>
+<div id="img10" class="lightbox">
+  <a href="#" class="close-btn">&times;</a>
+  <img src="1961 TAX RECEIPT.jpg" alt="Taxes Paid">
+</div>
 
 </body>
 </html>
