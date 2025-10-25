@@ -1,11 +1,87 @@
-<a href="index.html" class="home-btn">← Back to Home</a>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Artist Bio — Ryin Baskin</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f4f5f7;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      color: #111;
+      margin-bottom: 30px;
+    }
+
+    .entry {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      padding: 28px 36px;
+      margin: 40px auto;
+      max-width: 850px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-top: 0.6em;
+    }
+
+    /* Back to Home Button */
+    .home-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #3b82f6;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s ease, transform 0.2s ease;
+      z-index: 1000;
+    }
+
+    .home-btn:hover {
+      background-color: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 20px; }
+      .entry { padding: 20px; }
+      .home-btn { padding: 8px 14px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+
 <body>
-<h1> Bio</h1>
-<p>Ryin Baskin is a multidisciplinary artist based in New York City whose practice examines the layered ecologies of Black existence, memory, and community across social and physical landscapes. Working across experimental photography, fiber, sound, oral histories, and video, she builds sensorial environments that stretch the boundaries between archive and imagination. 
-Her work engages the everyday as a ground of both struggle and possibility, foregrounding the unseen labors that sustain communities and the narratives that resist erasure. Through immersive storytelling and material experimentation, she reclaims the overlooked histories and reimagine the conditions under which Black life continues to unfold.
-She holds an MA in Digital Media from St. Francis College and an MA in Media and Mass Communications from Pace University. Her work has been featured at Jamaica Center for Arts and Learning, Long Island City Open Arts, and Flushing Town Hall. <p></p>
-</p>
+
+  <a href="index.html" class="home-btn">← Back to Home</a>
+
+  <div class="entry">
+    <h1>Artist Bio</h1>
+    <p>Ryin Baskin is a multidisciplinary artist based in New York City whose practice examines the layered ecologies of Black existence, memory, and community across social and physical landscapes. Working across experimental photography, fiber, sound, oral histories, and video, she builds sensorial environments that stretch the boundaries between archive and imagination.</p>
+
+    <p>Her work engages the everyday as a ground of both struggle and possibility, foregrounding the unseen labors that sustain communities and the narratives that resist erasure. Through immersive storytelling and material experimentation, she reclaims overlooked histories and reimagines the conditions under which Black life continues to unfold.</p>
+
+    <p>She holds an MA in Digital Media from St. Francis College and an MA in Media and Mass Communications from Pace University. Her work has been featured at Jamaica Center for Arts and Learning, Long Island City Open Arts, and Flushing Town Hall.</p>
+  </div>
+
 </body>
 </html>
+
