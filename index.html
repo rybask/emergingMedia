@@ -1,20 +1,114 @@
-<!doctype html>
-  <html>
-    <head>
-      <title>Ryin Baskin (IMA 750)</title>
-    </head>
-    <body>
-      <h1>Ryin's Creative Manifesto</h1>
-      <h2> <a href="blog.html" target="_self">Blog</a></h2>
-      <hr>
-      <h2>Manifesto</h2>
-      <h3> <a href="manifesto_projectconcept.html" target="_self">Project Concept</a></h3>
-      <h3> <a href="photoessay.html" target="_self">Photo Essay</a></h3>
-      <h3>Zine</h3>
-      <h3>Motion</h3>
-      <h3>Manifesto 4</h3>
-      <hr>
-      <h2> <a href="bio.html" target="_self">Artist Bio</a></h2>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ryin Baskin (IMA 750)</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f4f5f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      color: #111;
+      margin-bottom: 40px;
+    }
+
+    /* Floating container */
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      padding: 32px 40px;
+      margin: 20px;
+      width: 100%;
+      max-width: 800px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      font-size: 1.4em;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      color: #111;
+    }
+
+    h3 {
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      color: #2563eb;
+      transform: translateX(4px);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 30px 0;
+    }
+
+    /* Optional subtle fade-in */
+    .card {
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 20px; }
+      .card { padding: 24px; }
+      h1 { font-size: 1.8em; }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ryin's Creative Manifesto</h1>
+
+  <div class="card">
+    <h2><a href="blog.html" target="_self">Blog</a></h2>
+    <p>Ongoing reflections on readings, theory, and creative development.</p>
+  </div>
+
+  <div class="card">
+    <h2>Manifesto</h2>
+    <h3><a href="manifesto_projectconcept.html" target="_self">Project Concept</a></h3>
+    <h3><a href="photoessay.html" target="_self">Photo Essay</a></h3>
+    <h3>Zine</h3>
+    <h3>Motion</h3>
+    <h3>Manifesto 4</h3>
+  </div>
+
+  <div class="card">
+    <h2><a href="bio.html" target="_self">Artist Bio</a></h2>
+    <p>Background, artistic influences, and creative journey.</p>
+  </div>
+</body>
+</html>
+
  
