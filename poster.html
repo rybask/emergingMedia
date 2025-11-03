@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Poster – Ryin Baskin (IMA 750)</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f4f5f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      color: #111;
+      margin-bottom: 40px;
+    }
+
+    .poster-container {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      padding: 32px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 825px;
+      height: 1200px;
+      overflow: hidden;
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 12px;
+      object-fit: contain;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .back-button:hover {
+      background-color: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 900px) {
+      .poster-container {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Poster</h1>
+
+  <div class="poster-container">
+    <img src="TGFT_EMERGING_MEDIA_FALL_2025.png" alt="Poster by Ryin Baskin" width="825" height="1200">
+  </div>
+
+  <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>
 
