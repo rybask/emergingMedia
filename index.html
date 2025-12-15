@@ -32,6 +32,8 @@
       width: 100%;
       max-width: 800px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
     }
 
     .card:hover {
@@ -69,12 +71,6 @@
       margin: 30px 0;
     }
 
-    /* Optional subtle fade-in */
-    .card {
-      animation: fadeIn 0.5s ease forwards;
-      opacity: 0;
-    }
-
     @keyframes fadeIn {
       to { opacity: 1; }
     }
@@ -107,3 +103,4 @@
   </div>
 </body>
 </html>
+
